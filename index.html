@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rifa Solidária! - Fabio Carneiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+          --color-main: #0d4a65;
+          --color-gold: #f2a922;
+          --color-bordo: #8a192a;
+          --color-btn-blue: #1e4e69;
+        }
+
+        body { 
+          font-family: 'Inter', sans-serif; 
+          background-color: var(--color-main); 
+          transition: background-color 0.3s ease;
+        }
+        .font-script { font-family: 'Dancing Script', cursive; }
+        
+        .bg-teal-main { background-color: var(--color-main); }
+        .text-teal-main { color: var(--color-main); }
+        .bg-bordo { background-color: var(--color-bordo); }
+        .bg-gold { background-color: var(--color-gold); }
+        .bg-btn-blue { background-color: var(--color-btn-blue); }
+        .text-gold { color: var(--color-gold); }
+
+        .glass-header-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .number-btn-shadow {
+            box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+        }
+
+        ::-webkit-scrollbar { display: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-white selection:bg-yellow-500 selection:text-white">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
